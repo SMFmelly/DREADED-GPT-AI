@@ -47,7 +47,7 @@ const Heroku = require("heroku-client");
  const herokuapi = process.env.HEROKU_API;
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
-//const autobio = process.env.AUTOBIO || 'TRUE';
+//const autobio = process.env.AUTOBIO || 'FALSE';
 const botname = process.env.BOTNAME || 'dreaded BOT';
 const antibot = process.env.ANTIBOT || 'TRUE';
   
@@ -106,8 +106,8 @@ const admin = process.env.ADMIN_MSG || 'Are you an admin?';
     const botAdmin = process.env.BOT_ADMIN_MSG || 'Am I an admin?'
     const NotOwner = process.env.NOT_OWNER_MSG || 'Are you the owner?';
 const wapresence = process.env.WA_PRESENCE || 'recording';
-const antilink = process.env.ANTILINK || 'TRUE';
-const antilinkall = process.env.ANTILINK_ALL || 'TRUE';
+const antilink = process.env.ANTILINK || 'FALSE';
+const antilinkall = process.env.ANTILINK_ALL || 'FALSE';
 
 function _0xfb25(_0x4763fd, _0xf70ff) {
     const _0x6abf0e = _0x1492();
