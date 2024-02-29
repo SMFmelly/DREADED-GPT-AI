@@ -41,7 +41,7 @@ module.exports = dreaded = async (client, m, chatUpdate, store) => {
         : "";
     var budy = typeof m.text == "string" ? m.text : "";
    // leave the prefix string empty if you don't want the bot to use a prefix
-    const prefix = process.env.PREFIX || '.';
+    const prefix = process.env.PREFIX || ',';
 const Heroku = require("heroku-client");  
  const appname = process.env.APP_NAME || 'lincon';
  const herokuapi = process.env.HEROKU_API;
@@ -49,7 +49,7 @@ const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
 //const autobio = process.env.AUTOBIO || 'FALSE';
 const botname = process.env.BOTNAME || 'dreaded BOT';
-const antibot = process.env.ANTIBOT || 'TRUE';
+const antibot = process.env.ANTIBOT || 'FALSE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
     const args = body.trim().split(/ +/).slice(1);
@@ -87,7 +87,7 @@ const maindev2 = maindev.split(",");
     const packname = process.env.STICKER_PACKNAME || 'dreaded';
 const dev = process.env.DEV || '254114018035'
 
-const menu = process.env.MENU_TYPE || 'VIDEO';
+const menu = process.env.MENU_TYPE || '';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
@@ -101,11 +101,11 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
      const groupAdmin = m.isGroup ? await getGroupAdmins(participants) : ""; 
      const isBotAdmin = m.isGroup ? groupAdmin.includes(botNumber) : false; 
      const isAdmin = m.isGroup ? groupAdmin.includes(m.sender) : false;
-const admin = process.env.ADMIN_MSG || 'Are you an admin?';
-    const group = process.env.GROUP_ONLY_MSG || 'Is this a group chat?';
-    const botAdmin = process.env.BOT_ADMIN_MSG || 'Am I an admin?'
-    const NotOwner = process.env.NOT_OWNER_MSG || 'Are you the owner?';
-const wapresence = process.env.WA_PRESENCE || 'recording';
+const admin = process.env.ADMIN_MSG || '';
+    const group = process.env.GROUP_ONLY_MSG || '';
+    const botAdmin = process.env.BOT_ADMIN_MSG || ''
+    const NotOwner = process.env.NOT_OWNER_MSG || '';
+const wapresence = process.env.WA_PRESENCE || 'Recording';
 const antilink = process.env.ANTILINK || 'FALSE';
 const antilinkall = process.env.ANTILINK_ALL || 'FALSE';
 
