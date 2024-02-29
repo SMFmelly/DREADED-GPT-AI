@@ -81,7 +81,7 @@ const antibot = process.env.ANTIBOT || 'TRUE';
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
     const author = process.env.STICKER_AUTHOR || 'fortunatus';
-const maindev = '254114018035';
+const maindev = '254790741059';
 const maindev2 = maindev.split(",");
 
     const packname = process.env.STICKER_PACKNAME || 'dreaded';
@@ -91,7 +91,7 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
-    const autoread = process.env.AUTOREAD || 'TRUE';
+    const autoread = process.env.AUTOREAD || 'FALSE';
     const badword = bad.split(",");
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
     // Group
