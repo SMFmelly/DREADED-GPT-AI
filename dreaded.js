@@ -43,7 +43,7 @@ module.exports = dreaded = async (client, m, chatUpdate, store) => {
    // leave the prefix string empty if you don't want the bot to use a prefix
     const prefix = process.env.PREFIX || '.';
 const Heroku = require("heroku-client");  
- const appname = process.env.APP_NAME || '';
+ const appname = process.env.APP_NAME || 'lincon';
  const herokuapi = process.env.HEROKU_API;
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
